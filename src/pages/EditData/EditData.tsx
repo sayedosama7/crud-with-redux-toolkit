@@ -66,14 +66,15 @@ const EditForm = () => {
 					id="name"
 					label="Name"
 					name="name"
-					className="mb-3 w-50 m-auto bg-light form-input"
+					className="w-50 m-auto bg-light form-input"
 					type="text"
 					value={nameUpdate}
 					onChange={e => setNameUpdate(e.target.value)}
 					placeholder="Add name"
+					error={nameError}
 					onKeyPress={handleKeyPress}
 				/>
-				<div className="error">
+				<div className="error mb-3">
 					{nameError ? 'please enter your Name' : ''}
 				</div>
 
@@ -81,15 +82,16 @@ const EditForm = () => {
 					id="email"
 					label="Email"
 					variant="outlined"
-					className="mb-3 w-50 m-auto bg-light form-input"
+					className="w-50 m-auto bg-light form-input"
 					type="email"
 					name="email"
 					value={emailUpdate}
 					onChange={e => setEmailUpdate(e.target.value)}
 					placeholder="Add email"
+					error={emailError}
 					onKeyPress={handleKeyPress}
 				/>
-				<div className="error">
+				<div className="error mb-3">
 					{emailError ? 'please enter your Email' : ''}
 				</div>
 
@@ -99,13 +101,14 @@ const EditForm = () => {
 					label="Phone"
 					variant="outlined"
 					name="phone"
-					className="mb-3 w-50 m-auto bg-light form-input"
+					className="w-50 m-auto bg-light form-input"
 					value={phoneUpdate}
 					onChange={e => setPhoneUpdate(e.target.value)}
 					placeholder="Add phone"
+					error={phoneError}
 					onKeyPress={handleKeyPress}
 				/>
-				<div className="error">
+				<div className="error mb-3">
 					{phoneError ? 'please enter your Phone' : ''}
 				</div>
 
