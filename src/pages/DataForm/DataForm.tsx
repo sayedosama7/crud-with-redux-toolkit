@@ -56,12 +56,12 @@ const DataForm = () => {
 							value={name}
 							onChange={e => setName(e.target.value)}
 							placeholder="Add name"
-							className="mb-3 w-50 m-auto bg-light form-input"
+							className="w-50 m-auto bg-light form-input"
 							error={nameError}
 							onKeyPress={handleKeyPress}
 						/>
 						<div className="error">
-							<div className="error">
+							<div className="error mb-3">
 								{nameError ? 'please enter your Name' : ''}
 							</div>
 						</div>
@@ -74,10 +74,11 @@ const DataForm = () => {
 							value={email}
 							onChange={e => setEmail(e.target.value)}
 							placeholder="Add email"
-							className="mb-3 w-50 m-auto bg-light form-input"
+							className="w-50 m-auto bg-light form-input"
+							error={emailError}
 							onKeyPress={handleKeyPress}
 						/>
-						<div className="error">
+						<div className="error mb-3">
 							{emailError ? 'please enter your Email' : ''}
 						</div>
 
@@ -89,11 +90,11 @@ const DataForm = () => {
 							value={phone}
 							onChange={e => setPhone(e.target.value)}
 							placeholder="Add phone"
-							className="mb-3 w-50 m-auto bg-light form-input"
+							className="w-50 m-auto bg-light form-input"
 							error={phoneError}
 							onKeyPress={handleKeyPress}
 						/>
-						<div className="error">
+						<div className="error mb-3">
 							{phoneError ? 'please enter your Phone' : ''}
 						</div>
 					</div>
