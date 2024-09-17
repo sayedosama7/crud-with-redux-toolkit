@@ -1,0 +1,32 @@
+/* start global  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* End global  */
+
+body {
+    background-color: #def1f8 !important;
+
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+    margin-top: -5px;
+    text-align: center;
+}
+
+@media(max-width:992px) {
+    .form-input {
+        width: 100% !important;
+    }
+}
